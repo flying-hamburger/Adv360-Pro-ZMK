@@ -79,11 +79,11 @@
 
         layer_MISTROGUE {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &tog 1                                                      &trans        &trans        &trans        &trans        &trans        &trans  &trans
- &trans  &trans   &kp W  &trans  &trans  &trans            &trans                                                      &trans  &kp NUMBER_5  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
- &trans   &kp A   &kp S   &kp D  &trans  &trans            &trans   &trans  &trans  &trans  &trans  &trans  &trans     &trans         &kp T         &kp E         &none         &kp E         &kp R  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans   &trans  &trans  &trans  &trans  &trans  &trans     &trans        &trans        &trans        &trans        &trans        &trans  &trans
- &trans  &trans  &trans  &trans  &trans                     &kp G  &kp TAB  &trans                  &trans   &kp F  &kp SPACE                      &trans        &trans        &trans        &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans            &tog 0                                                      &trans        &trans        &trans        &trans        &trans        &trans  &trans
+  &trans  &trans   &kp W  &trans  &trans  &trans            &trans                                                      &trans  &kp NUMBER_5  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
+ &kp ESC   &kp A   &kp S   &kp D  &trans  &trans            &trans   &trans  &trans  &trans  &trans  &trans  &trans     &trans         &kp T         &kp J         &kp K         &kp E         &kp R  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans            &trans   &trans  &trans  &trans  &trans  &trans  &trans     &trans        &trans        &trans        &trans        &trans        &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                     &kp G  &kp TAB  &trans                  &trans   &kp F  &kp SPACE                      &trans        &trans        &trans        &trans  &trans
             >;
         };
 
