@@ -31,6 +31,15 @@
         };
     };
 
+    macros {
+        SRN_Quit: SRN_Quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(P) &tog 4>;
+            label = "SRN_QUIT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -76,11 +85,11 @@
 
         SRN {
             bindings = <
-&trans  &trans          &trans  &trans        &trans        &trans          &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none           &kp Q   &kp W         &kp E         &kp LS(LC(F3))  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F5          &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &kp NUMBER_1  &kp NUMBER_5  &trans                          &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans        &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans        &trans        &trans          &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp ESC         &kp Q   &kp W         &kp E         &kp LS(LC(F3))  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F5          &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &kp NUMBER_1  &kp NUMBER_5  &trans                             &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans        &trans                        &SRN_Quit  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
